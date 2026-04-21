@@ -27,11 +27,11 @@
         Manajemen Data
     </div>
 
-    <!-- Nav Item - Pelanggan -->
+    <!-- Nav Item - Customer -->
     <li class="nav-item <?= ($title == 'Pelanggan') ? 'active' : ''; ?>">
         <a class="nav-link" href="pelanggan.php">
             <i class="fas fa-fw fa-users"></i>
-            <span>Pelanggan</span></a>
+            <span>Customer</span></a>
     </li>
 
     <!-- Nav Item - Outlet -->
@@ -41,18 +41,18 @@
             <span>Outlet</span></a>
     </li>
 
-    <!-- Nav Item - Paket -->
+    <!-- Nav Item - Package -->
     <li class="nav-item <?= ($title == 'Paket') ? 'active' : ''; ?>">
         <a class="nav-link" href="paket.php">
             <i class="fas fa-fw fa-box-open"></i>
-            <span>Paket</span></a>
+            <span>Package</span></a>
     </li>
 
-    <!-- Nav Item - Pengguna -->
+    <!-- Nav Item - User -->
     <li class="nav-item <?= ($title == 'Pengguna') ? 'active' : ''; ?>">
         <a class="nav-link" href="pengguna.php">
             <i class="fas fa-fw fa-user"></i>
-            <span>Pengguna</span></a>
+            <span>User</span></a>
     </li>
 
     <!-- Divider -->
@@ -60,21 +60,21 @@
 
     <!-- Heading -->
     <div class="sidebar-heading">
-        Transaksi
+        Transaction
     </div>
 
-    <!-- Nav Item - Transaksi -->
+    <!-- Nav Item - Transaction -->
     <li class="nav-item <?= ($title == 'Transaksi') ? 'active' : ''; ?>">
         <a class="nav-link" href="transaksi.php">
             <i class="fas fa-fw fa-exchange-alt"></i>
-            <span>Transaksi</span></a>
+            <span>Transaction</span></a>
     </li>
 
-    <!-- Nav Item - Laporan -->
+    <!-- Nav Item - Report -->
     <li class="nav-item <?= ($title == 'Laporan') ? 'active' : ''; ?>">
         <a class="nav-link" href="laporan.php">
             <i class="far fa-fw fa-file"></i>
-            <span>Laporan</span></a>
+            <span>Report</span></a>
     </li>
 
     <!-- Divider -->
