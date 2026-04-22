@@ -25,7 +25,7 @@ if (isset($_POST['simpan'])) {
 
     <!-- Page Heading -->
     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-        <h1 class="h3 mb-0 text-gray-800">Paket</h1>
+        <h1 class="h3 mb-0 text-gray-800">Package</h1>
         <a class="btn btn-secondary" href="paket.php"><i class="fas fa-arrow-left mr-2"></i>Back</a>
     </div>
 
