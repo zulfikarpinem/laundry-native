@@ -34,7 +34,7 @@ if (isset($_POST['update'])) {
     <!-- DataTales Example -->
     <div class="card shadow mb-4">
         <div class="card-header py-3">
-            <h6 class="m-0 font-weight-bold text-primary">Edit Paket</h6>
+            <h6 class="m-0 font-weight-bold text-primary">Edit Package</h6>
         </div>
         <div class="row card-body align-items-center">
             <div class="col-md text-center">
@@ -45,7 +45,7 @@ if (isset($_POST['update'])) {
                     <input type="hidden" name="id" value="<?= $paket['id']; ?>">
                     <div class="form-floating mb-3">
                         <select class="form-select" id="outlet" aria-label="Floating label select example" name="outlet" required>
-                            <option disabled>Pilih outlet</option>
+                            <option disabled>Select outlet</option>
                             <?php foreach ($outlet as $o) : ?>
                                 <option value="<?= $o['id']; ?>" <?= ($paket['id_outlet'] == $o['id']) ? 'selected' : ''; ?>><?= $o['nama']; ?></option>
                             <?php endforeach; ?>

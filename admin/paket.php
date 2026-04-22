@@ -26,14 +26,14 @@ $paket = query("SELECT tb_paket.*, tb_outlet.id, tb_outlet.nama FROM tb_paket, t
 
     <!-- Page Heading -->
     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-        <h1 class="h3 mb-0 text-gray-800">Paket</h1>
-        <a class="btn btn-primary" href="tambah_paket.php"><i class="fas fa-plus mr-2"></i>Tambah Paket</a>
+        <h1 class="h3 mb-0 text-gray-800">Package</h1>
+        <a class="btn btn-primary" href="tambah_paket.php"><i class="fas fa-plus mr-2"></i>Add Package</a>
     </div>
 
     <!-- DataTales Example -->
     <div class="card shadow mb-4">
         <div class="card-header py-3">
-            <h6 class="m-0 font-weight-bold text-primary">Data Paket</h6>
+            <h6 class="m-0 font-weight-bold text-primary">Data Package</h6>
         </div>
         <div class="card-body">
             <div class="table-responsive">
@@ -42,20 +42,20 @@ $paket = query("SELECT tb_paket.*, tb_outlet.id, tb_outlet.nama FROM tb_paket, t
                         <tr>
                             <th>No.</th>
                             <th>Outlet</th>
-                            <th>Jenis</th>
-                            <th>Nama</th>
-                            <th>Harga</th>
-                            <th>Aksi</th>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Price</th>
+                            <th>Action</th>
                         </tr>
                     </thead>
                     <tfoot>
                         <tr>
                             <th>No.</th>
                             <th>Outlet</th>
-                            <th>Jenis</th>
-                            <th>Nama</th>
-                            <th>Harga</th>
-                            <th>Aksi</th>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Price</th>
+                            <th>Action</th>
                         </tr>
                     </tfoot>
                     <tbody>
@@ -88,15 +88,15 @@ $paket = query("SELECT tb_paket.*, tb_outlet.id, tb_outlet.nama FROM tb_paket, t
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="hapusModalLabel">Yakin ingin menghapus data ini?</h5>
+                <h5 class="modal-title" id="hapusModalLabel">Are you sure you want to delete this data?</h5>
                 <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">×</span>
                 </button>
             </div>
-            <div class="modal-body">Klik tombol hapus untuk menghapus.</div>
+            <div class="modal-body">Click the delete button to delete.</div>
             <div class="modal-footer">
-                <button class="btn btn-secondary" type="button" data-dismiss="modal">Batal</button>
-                <a class="btn btn-danger" href="" id="tombolHapus">Hapus</a>
+                <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                <a class="btn btn-danger" href="" id="tombolHapus">Accept</a>
             </div>
         </div>
     </div>

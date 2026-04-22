@@ -26,14 +26,14 @@ $pengguna = query("SELECT tb_user.*, tb_outlet.nama AS nama_outlet FROM tb_user,
 
     <!-- Page Heading -->
     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-        <h1 class="h3 mb-0 text-gray-800">Pengguna</h1>
-        <a class="btn btn-primary" href="tambah_pengguna.php"><i class="fas fa-plus mr-2"></i>Tambah Pengguna</a>
+        <h1 class="h3 mb-0 text-gray-800">User</h1>
+        <a class="btn btn-primary" href="tambah_pengguna.php"><i class="fas fa-plus mr-2"></i>Add User</a>
     </div>
 
     <!-- DataTales Example -->
     <div class="card shadow mb-4">
         <div class="card-header py-3">
-            <h6 class="m-0 font-weight-bold text-primary">Data Pengguna</h6>
+            <h6 class="m-0 font-weight-bold text-primary">User Data</h6>
         </div>
         <div class="card-body">
             <div class="table-responsive">
@@ -41,19 +41,19 @@ $pengguna = query("SELECT tb_user.*, tb_outlet.nama AS nama_outlet FROM tb_user,
                     <thead>
                         <tr>
                             <th>No.</th>
-                            <th>Nama</th>
+                            <th>Name</th>
                             <th>Username</th>
                             <th>Outlet</th>
-                            <th>Aksi</th>
+                            <th>Action</th>
                         </tr>
                     </thead>
                     <tfoot>
                         <tr>
                             <th>No.</th>
-                            <th>Nama</th>
+                            <th>Name</th>
                             <th>Username</th>
                             <th>Outlet</th>
-                            <th>Aksi</th>
+                            <th>Action</th>
                         </tr>
                     </tfoot>
                     <tbody>
@@ -85,15 +85,15 @@ $pengguna = query("SELECT tb_user.*, tb_outlet.nama AS nama_outlet FROM tb_user,
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="hapusModalLabel">Yakin ingin menghapus data ini?</h5>
+                <h5 class="modal-title" id="hapusModalLabel">Are you sure you want to delete this data?</h5>
                 <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">×</span>
                 </button>
             </div>
-            <div class="modal-body">Klik tombol hapus untuk menghapus.</div>
+            <div class="modal-body">Click the delete button to delete.</div>
             <div class="modal-footer">
-                <button class="btn btn-secondary" type="button" data-dismiss="modal">Batal</button>
-                <a class="btn btn-danger" href="" id="tombolHapus">Hapus</a>
+                <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                <a class="btn btn-danger" href="" id="tombolHapus">Accept</a>
             </div>
         </div>
     </div>

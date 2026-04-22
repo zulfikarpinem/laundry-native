@@ -25,14 +25,14 @@ if (isset($_POST['simpan'])) {
 
     <!-- Page Heading -->
     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-        <h1 class="h3 mb-0 text-gray-800">Pengguna</h1>
+        <h1 class="h3 mb-0 text-gray-800">User</h1>
         <a class="btn btn-secondary" href="pengguna.php"><i class="fas fa-arrow-left mr-2"></i>Kembali</a>
     </div>
 
     <!-- DataTales Example -->
     <div class="card shadow mb-4">
         <div class="card-header py-3">
-            <h6 class="m-0 font-weight-bold text-primary">Tambah Pengguna</h6>
+            <h6 class="m-0 font-weight-bold text-primary">Add User</h6>
         </div>
         <div class="row card-body align-items-center">
             <div class="col-md text-center">
@@ -42,7 +42,7 @@ if (isset($_POST['simpan'])) {
                 <form action="" method="post">
                     <div class="form-floating mb-3">
                         <input type="text" class="form-control" id="nama" placeholder="" name="nama" required>
-                        <label for="nama">Nama</label>
+                        <label for="nama">Name</label>
                     </div>
                     <div class="form-floating mb-3">
                         <input type="text" class="form-control" id="username" placeholder="" name="username" required>
@@ -63,9 +63,9 @@ if (isset($_POST['simpan'])) {
                     </div>
                     <div class="form-floating mb-3">
                         <select class="form-select" id="role" aria-label="Floating label select example" name="role" required>
-                            <option selected>Pilih role</option>
+                            <option selected>Select role</option>
                             <option value="admin">Admin</option>
-                            <option value="kasir">Kasir</option>
+                            <option value="kasir">Cashier</option>
                             <option value="owner">Owner</option>
                         </select>
                         <label for="role">Role</label>

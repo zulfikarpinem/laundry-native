@@ -10,16 +10,16 @@ $pelanggan = query("SELECT * FROM tb_member");
 <div class="container-fluid">
     <?php
     if (isset($_SESSION['inserted'])) {
-        echo '<div class="alert alert-success">Data berhasil ditambahkan!</div>';
+        echo '<div class="alert alert-success">Data added successfully!</div>';
         unset($_SESSION['inserted']);
     } elseif (isset($_SESSION['updated'])) {
-        echo '<div class="alert alert-success">Data berhasil diubah!</div>';
+        echo '<div class="alert alert-success">Data changed successfully!</div>';
         unset($_SESSION['updated']);
     } elseif (isset($_SESSION['deleted'])) {
-        echo '<div class="alert alert-success">Data berhasil dihapus!</div>';
+        echo '<div class="alert alert-success">Data deleted successfully!</div>';
         unset($_SESSION['deleted']);
     } elseif (isset($_SESSION['notDeleted'])) {
-        echo '<div class="alert alert-danger">Data gagal dihapus!</div>';
+        echo '<div class="alert alert-danger">Data delation failed!</div>';
         unset($_SESSION['notDeleted']);
     }
     ?>
@@ -65,7 +65,7 @@ $pelanggan = query("SELECT * FROM tb_member");
                                 <td><?= $i++; ?></td>
                                 <td><?= $p['nama']; ?></td>
                                 <td><?= $p['alamat']; ?></td>
-                                <td><?= ($p['jenis_kelamin'] == 'L') ? 'Laki-laki' : 'Perempuan'; ?></td>
+                                <td><?= ($p['jenis_kelamin'] == 'L') ? 'Male' : 'Female'; ?></td>
                                 <td><?= $p['tlp']; ?></td>
                                 <td>
                                     <a class="btn btn-sm btn-warning" href="edit_pelanggan.php?id=<?= $p['id']; ?>"><i class="fa fa-edit"></i></a>
@@ -88,15 +88,15 @@ $pelanggan = query("SELECT * FROM tb_member");
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="hapusModalLabel">Yakin ingin menghapus data ini?</h5>
+                <h5 class="modal-title" id="hapusModalLabel">Are you sure you want to delete this data?</h5>
                 <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">×</span>
                 </button>
             </div>
-            <div class="modal-body">Klik tombol hapus untuk menghapus.</div>
+            <div class="modal-body">Click the delete button to delete.</div>
             <div class="modal-footer">
-                <button class="btn btn-secondary" type="button" data-dismiss="modal">Batal</button>
-                <a class="btn btn-danger" href="" id="tombolHapus">Hapus</a>
+                <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                <a class="btn btn-danger" href="" id="tombolHapus">Accept</a>
             </div>
         </div>
     </div>

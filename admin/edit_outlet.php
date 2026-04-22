@@ -19,7 +19,7 @@ if (isset($_POST['update'])) {
 <div class="container-fluid">
     <?php
     if (isset($_SESSION['notUpdated'])) {
-        echo '<div class="alert alert-danger">Data gagal diubah!</div>';
+        echo '<div class="alert alert-danger">Data failed to change!</div>';
         unset($_SESSION['notUpdated']);
     }
     ?>
@@ -27,7 +27,7 @@ if (isset($_POST['update'])) {
     <!-- Page Heading -->
     <div class="d-sm-flex align-items-center justify-content-between mb-4">
         <h1 class="h3 mb-0 text-gray-800">Outlet</h1>
-        <a class="btn btn-secondary" href="outlet.php"><i class="fas fa-arrow-left mr-2"></i>Kembali</a>
+        <a class="btn btn-secondary" href="outlet.php"><i class="fas fa-arrow-left mr-2"></i>Back</a>
     </div>
 
     <!-- DataTales Example -->
@@ -44,15 +44,15 @@ if (isset($_POST['update'])) {
                     <input type="hidden" name="id" value="<?= $outlet['id']; ?>">
                     <div class="form-floating mb-3">
                         <input type="text" class="form-control" id="nama" name="nama" value="<?= $outlet['nama']; ?>" required>
-                        <label for="nama">Nama Outlet</label>
+                        <label for="nama">Outlet Name</label>
                     </div>
                     <div class="form-floating mb-3">
                         <textarea class="form-control" id="alamat" name="alamat" required><?= $outlet['alamat']; ?></textarea>
-                        <label for="alamat">Alamat</label>
+                        <label for="alamat">Address</label>
                     </div>
                     <div class="form-floating mb-3">
                         <input type="text" class="form-control" id="telepon" name="telepon" value="<?= $outlet['tlp']; ?>" required>
-                        <label for="telepon">No. Telepon</label>
+                        <label for="telepon">Mobile Number</label>
                     </div>
                     <button type="submit" class="btn btn-primary float-right" name="update">Update</button>
                 </form>
