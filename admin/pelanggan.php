@@ -26,14 +26,14 @@ $pelanggan = query("SELECT * FROM tb_member");
 
     <!-- Page Heading -->
     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-        <h1 class="h3 mb-0 text-gray-800">Pelanggan</h1>
-        <a class="btn btn-primary" href="tambah_pelanggan.php"><i class="fas fa-plus mr-2"></i>Tambah Pelanggan</a>
+        <h1 class="h3 mb-0 text-gray-800">Customer</h1>
+        <a class="btn btn-primary" href="tambah_pelanggan.php"><i class="fas fa-plus mr-2"></i>Add Customer</a>
     </div>
 
     <!-- DataTales Example -->
     <div class="card shadow mb-4">
         <div class="card-header py-3">
-            <h6 class="m-0 font-weight-bold text-primary">Data Pelanggan</h6>
+            <h6 class="m-0 font-weight-bold text-primary">Customer Data</h6>
         </div>
         <div class="card-body">
             <div class="table-responsive">
@@ -41,21 +41,21 @@ $pelanggan = query("SELECT * FROM tb_member");
                     <thead>
                         <tr>
                             <th>No.</th>
-                            <th>Nama</th>
-                            <th>Alamat</th>
-                            <th>Jenis Kelamin</th>
-                            <th>No. Telepon</th>
-                            <th>Aksi</th>
+                            <th>Name</th>
+                            <th>Address</th>
+                            <th>Gender</th>
+                            <th>Mobile Number</th>
+                            <th>Action</th>
                         </tr>
                     </thead>
                     <tfoot>
                         <tr>
                             <th>No.</th>
-                            <th>Nama</th>
-                            <th>Alamat</th>
-                            <th>Jenis Kelamin</th>
-                            <th>No. Telepon</th>
-                            <th>Aksi</th>
+                            <th>Name</th>
+                            <th>Address</th>
+                            <th>Gender</th>
+                            <th>Mobile Number</th>
+                            <th>Action</th>
                         </tr>
                     </tfoot>
                     <tbody>
