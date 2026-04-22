@@ -19,7 +19,7 @@ $pengguna = query("SELECT tb_user.*, tb_outlet.nama AS nama_outlet FROM tb_user,
         echo '<div class="alert alert-success">Data deleted successfully!</div>';
         unset($_SESSION['deleted']);
     } elseif (isset($_SESSION['notDeleted'])) {
-        echo '<div class="alert alert-danger">Data delation failed!</div>';
+        echo '<div class="alert alert-danger">Data deletion failed!</div>';
         unset($_SESSION['notDeleted']);
     }
     ?>

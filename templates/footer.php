@@ -27,14 +27,14 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Yakin ingin logout?</h5>
+                <h5 class="modal-title" id="exampleModalLabel">Are you sure you want to logout?</h5>
                 <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">×</span>
                 </button>
             </div>
-            <div class="modal-body">Yaudah deh kalo kamu mau nya gitu, logout sana.</div>
+            <div class="modal-body">If yes, press accept.</div>
             <div class="modal-footer">
-                <button class="btn btn-secondary" type="button" data-dismiss="modal">Batal</button>
+                <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
                 <a class="btn btn-primary" href="../logout.php">Logout</a>
             </div>
         </div>

@@ -25,21 +25,21 @@ if (isset($_POST['simpan'])) {
 <div class="container-fluid">
     <?php
     if (isset($_SESSION['notInserted'])) {
-        echo '<div class="alert alert-danger">Data gagal ditambahkan!</div>';
+        echo '<div class="alert alert-danger">Data failed to add!</div>';
         unset($_SESSION['notInserted']);
     }
     ?>
 
     <!-- Page Heading -->
     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-        <h1 class="h3 mb-0 text-gray-800">Transaksi</h1>
-        <a class="btn btn-secondary" href="transaksi.php"><i class="fas fa-arrow-left mr-2"></i>Kembali</a>
+        <h1 class="h3 mb-0 text-gray-800">Transaction</h1>
+        <a class="btn btn-secondary" href="transaksi.php"><i class="fas fa-arrow-left mr-2"></i>Back</a>
     </div>
 
     <!-- DataTales Example -->
     <div class="card shadow mb-4">
         <div class="card-header py-3">
-            <h6 class="m-0 font-weight-bold text-primary">Tambah Transaksi</h6>
+            <h6 class="m-0 font-weight-bold text-primary">Add Transaction</h6>
         </div>
         <form action="" method="post">
             <input type="hidden" name="idTransaksi" value="<?= $idTransaksi; ?>">
@@ -47,7 +47,7 @@ if (isset($_POST['simpan'])) {
                 <div class="col-md">
                     <div class="form-floating mb-3">
                         <select class="form-select" id="outlet" aria-label="Floating label select example" name="outlet" required>
-                            <option selected disabled>Pilih outlet</option>
+                            <option selected disabled>Select Outlet</option>
                             <?php foreach ($outlet as $o) : ?>
                                 <option value="<?= $o['id']; ?>"><?= $o['nama']; ?></option>
                             <?php endforeach; ?>
@@ -56,11 +56,11 @@ if (isset($_POST['simpan'])) {
                     </div>
                     <div class="form-floating mb-3">
                         <input type="text" class="form-control" id="invoice" placeholder="" name="invoice" readonly value="<?= date('YmdHis'); ?>">
-                        <label for="invoice">Kode Invoice</label>
+                        <label for="invoice">Invoice Code</label>
                     </div>
                     <div class="form-floating mb-3">
                         <select class="form-select" id="member" aria-label="Floating label select example" name="member" required>
-                            <option selected disabled>Pilih member</option>
+                            <option selected disabled>Select Member</option>
                             <?php foreach ($member as $m) : ?>
                                 <option value="<?= $m['id']; ?>"><?= $m['nama']; ?></option>
                             <?php endforeach; ?>
@@ -69,47 +69,47 @@ if (isset($_POST['simpan'])) {
                     </div>
                     <div class="form-floating mb-3">
                         <input type="date" class="form-control" id="tgl" placeholder="" name="tgl" readonly value="<?= date('Y-m-d'); ?>" required>
-                        <label for="tgl">Tanggal Transaksi</label>
+                        <label for="tgl">Transaction Date</label>
                     </div>
                     <div class="form-floating mb-3">
                         <input type="date" class="form-control" id="batas" placeholder="" name="batas" required>
-                        <label for="batas">Batas Waktu</label>
+                        <label for="batas">Deadline</label>
                     </div>
                     <div class="form-floating mb-3">
                         <input type="date" class="form-control" id="tglBayar" placeholder="" name="tglBayar">
-                        <label for="tglBayar">Tanggal Bayar</label>
+                        <label for="tglBayar">Payment Date</label>
                     </div>
                 </div>
                 <div class="col-md">
                     <div class="form-floating mb-3">
                         <input type="number" class="form-control" id="tambahan" placeholder="" name="tambahan" required>
-                        <label for="tambahan">Biaya Tambahan</label>
+                        <label for="tambahan">Additional Cost</label>
                     </div>
                     <div class="form-floating mb-3">
                         <select class="form-select" id="dibayar" aria-label="Floating label select example" name="dibayar" required>
-                            <option value="belum dibayar" selected>Belum Dibayar</option>
-                            <option value="dibayar">Dibayar</option>
+                            <option value="belum dibayar" selected>Not yet paid</option>
+                            <option value="dibayar">Paid</option>
                         </select>
-                        <label for="dibayar">Status Pembayaran</label>
+                        <label for="dibayar">Payment Status</label>
                     </div>
                     <div class="form-floating mb-3">
                         <select class="form-select" id="user" aria-label="Floating label select example" name="user" required>
-                            <option selected disabled>Pilih user</option>
+                            <option selected disabled>Select User</option>
                             <?php foreach ($user as $u) : ?>
                                 <option value="<?= $u['id']; ?>"><?= $u['nama']; ?></option>
                             <?php endforeach; ?>
                         </select>
-                        <label for="user">Petugas</label>
+                        <label for="user">Officer</label>
                     </div>
                     <div class="form-floating mb-3">
                         <select class="form-select" id="paket" aria-label="Floating label select example" name="paket" required>
-                            <option selected disabled>Pilih paket</option>
+                            <option selected disabled>Select Package</option>
                             <?php foreach ($paket as $p) : ?>
                                 <option value="<?= $p['id']; ?>"><?= $p['nama_paket']; ?></option>
                                 <input type="hidden" name="harga" value="<?= $p['harga']; ?>">
                             <?php endforeach; ?>
                         </select>
-                        <label for="paket">Petugas</label>
+                        <label for="paket">Officer</label>
                     </div>
                     <div class="form-floating mb-3">
                         <input type="number" class="form-control" id="qty" placeholder="" name="qty" required>
@@ -117,9 +117,9 @@ if (isset($_POST['simpan'])) {
                     </div>
                     <div class="form-floating mb-3">
                         <textarea name="keterangan" id="keterangan" class="form-control" placeholder="" required></textarea>
-                        <label for="keterangan">Keterangan</label>
+                        <label for="keterangan">Information</label>
                     </div>
-                    <button type="submit" class="btn btn-primary float-right" name="simpan">Simpan</button>
+                    <button type="submit" class="btn btn-primary float-right" name="simpan">Save</button>
                 </div>
             </div>
         </form>

@@ -10,16 +10,16 @@ $paket = query("SELECT tb_paket.*, tb_outlet.id, tb_outlet.nama FROM tb_paket, t
 <div class="container-fluid">
     <?php
     if (isset($_SESSION['inserted'])) {
-        echo '<div class="alert alert-success">Data berhasil ditambahkan!</div>';
+        echo '<div class="alert alert-success">Data added successfully!</div>';
         unset($_SESSION['inserted']);
     } elseif (isset($_SESSION['updated'])) {
-        echo '<div class="alert alert-success">Data berhasil diubah!</div>';
+        echo '<div class="alert alert-success">Data changed successfully!</div>';
         unset($_SESSION['updated']);
     } elseif (isset($_SESSION['deleted'])) {
-        echo '<div class="alert alert-success">Data berhasil dihapus!</div>';
+        echo '<div class="alert alert-success">Data deleted successfully!</div>';
         unset($_SESSION['deleted']);
     } elseif (isset($_SESSION['notDeleted'])) {
-        echo '<div class="alert alert-danger">Data gagal dihapus!</div>';
+        echo '<div class="alert alert-danger">Data deletion failed!</div>';
         unset($_SESSION['notDeleted']);
     }
     ?>
@@ -66,7 +66,7 @@ $paket = query("SELECT tb_paket.*, tb_outlet.id, tb_outlet.nama FROM tb_paket, t
                                 <td><?= $p['nama']; ?></td>
                                 <td><?= ucfirst($p['jenis']); ?></td>
                                 <td><?= $p['nama_paket']; ?></td>
-                                <td>Rp<?= number_format($p['harga'], 2, ',', '.'); ?></td>
+                                <td>PHP <?= number_format($p['harga'], 2, ',', '.'); ?></td>
                                 <td>
                                     <a class="btn btn-sm btn-warning" href="edit_paket.php?id=<?= $p['id']; ?>"><i class="fa fa-edit"></i></a>
                                     <a class="btn btn-sm btn-danger" data-toggle="modal" data-target="#hapusModal" data-id="<?= $p['id']; ?>" id="tombolModalHapus"><i class="fas fa-trash"></i></a>
