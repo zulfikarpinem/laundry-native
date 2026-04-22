@@ -67,7 +67,7 @@ if (isset($_POST['login'])) {
                                     </div>
                                     <form class="user" action="" method="post">
                                         <div class="form-group">
-                                            <input type="text" class="form-control form-control-user" id="username" placeholder="Masukkan username..." name="username" required>
+                                            <input type="text" class="form-control form-control-user" id="username" placeholder="Enter Username" name="username" required>
                                         </div>
                                         <div class="form-group">
                                             <input type="password" class="form-control form-control-user" id="password" placeholder="Password" name="password" required>

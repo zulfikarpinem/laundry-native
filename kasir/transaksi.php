@@ -10,24 +10,24 @@ $transaksi = query("SELECT tb_transaksi.*, tb_outlet.id AS outlet_id, tb_outlet.
 <div class="container-fluid">
     <?php
     if (isset($_SESSION['inserted'])) {
-        echo '<div class="alert alert-success">Data berhasil ditambahkan!</div>';
+        echo '<div class="alert alert-success">Data added successfully!</div>';
         unset($_SESSION['inserted']);
     } elseif (isset($_SESSION['updated'])) {
-        echo '<div class="alert alert-success">Data berhasil diubah!</div>';
+        echo '<div class="alert alert-success">Data changed successfully!</div>';
         unset($_SESSION['updated']);
     } elseif (isset($_SESSION['deleted'])) {
-        echo '<div class="alert alert-success">Data berhasil dihapus!</div>';
+        echo '<div class="alert alert-success">Data deleted successfully!</div>';
         unset($_SESSION['deleted']);
     } elseif (isset($_SESSION['notDeleted'])) {
-        echo '<div class="alert alert-danger">Data gagal dihapus!</div>';
+        echo '<div class="alert alert-danger">Data deletion failed!</div>';
         unset($_SESSION['notDeleted']);
     }
     ?>
 
     <!-- Page Heading -->
     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-        <h1 class="h3 mb-0 text-gray-800">Transaksi</h1>
-        <a class="btn btn-primary" href="tambah_transaksi.php"><i class="fas fa-plus mr-2"></i>Tambah Transaksi</a>
+        <h1 class="h3 mb-0 text-gray-800">Transaction</h1>
+        <a class="btn btn-primary" href="tambah_transaksi.php"><i class="fas fa-plus mr-2"></i>Add Transaction</a>
     </div>
 
     <!-- DataTales Example -->
@@ -42,36 +42,36 @@ $transaksi = query("SELECT tb_transaksi.*, tb_outlet.id AS outlet_id, tb_outlet.
                         <tr>
                             <th>No.</th>
                             <th>Outlet</th>
-                            <th>Kode Invoice</th>
-                            <th>Nama Member</th>
-                            <th>Tanggal Transaksi</th>
-                            <th>Batas Waktu</th>
-                            <th>Tanggal Bayar</th>
-                            <th>Biaya Tambahan</th>
-                            <th>Diskon</th>
-                            <th>Pajak</th>
+                            <th>Invoice Code</th>
+                            <th>Member Name</th>
+                            <th>Transaction Date</th>
+                            <th>Deadline</th>
+                            <th>Payment Date</th>
+                            <th>Additional Cost</th>
+                            <th>Discount</th>
+                            <th>Tax</th>
                             <th>Status</th>
-                            <th>Dibayar</th>
-                            <th>Petugas</th>
-                            <th>Aksi</th>
+                            <th>Paid</th>
+                            <th>Officer</th>
+                            <th>Action</th>
                         </tr>
                     </thead>
                     <tfoot>
                         <tr>
                             <th>No.</th>
                             <th>Outlet</th>
-                            <th>Kode Invoice</th>
-                            <th>Nama Member</th>
-                            <th>Tanggal Transaksi</th>
-                            <th>Batas Waktu</th>
-                            <th>Tanggal Bayar</th>
-                            <th>Biaya Tambahan</th>
-                            <th>Diskon</th>
-                            <th>Pajak</th>
+                            <th>Invoice Code</th>
+                            <th>Member Name</th>
+                            <th>Transaction Date</th>
+                            <th>Deadline</th>
+                            <th>Payment Date</th>
+                            <th>Additional Cost</th>
+                            <th>Discount</th>
+                            <th>Tax</th>
                             <th>Status</th>
-                            <th>Dibayar</th>
-                            <th>Petugas</th>
-                            <th>Aksi</th>
+                            <th>Paid</th>
+                            <th>Officer</th>
+                            <th>Action</th>
                         </tr>
                     </tfoot>
                     <tbody>

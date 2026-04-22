@@ -24,14 +24,14 @@
 
     <!-- Heading -->
     <div class="sidebar-heading">
-        Manajemen Data
+        Data Management
     </div>
 
     <!-- Nav Item - Pelanggan -->
     <li class="nav-item <?= ($title == 'Pelanggan') ? 'active' : ''; ?>">
         <a class="nav-link" href="pelanggan.php">
             <i class="fas fa-fw fa-users"></i>
-            <span>Pelanggan</span></a>
+            <span>Customer</span></a>
     </li>
 
     <!-- Divider -->
@@ -39,21 +39,21 @@
 
     <!-- Heading -->
     <div class="sidebar-heading">
-        Transaksi
+        Transaction
     </div>
 
     <!-- Nav Item - Transaksi -->
     <li class="nav-item <?= ($title == 'Transaksi') ? 'active' : ''; ?>">
         <a class="nav-link" href="transaksi.php">
             <i class="fas fa-fw fa-exchange-alt"></i>
-            <span>Transaksi</span></a>
+            <span>Transaction</span></a>
     </li>
 
     <!-- Nav Item - Laporan -->
     <li class="nav-item <?= ($title == 'Laporan') ? 'active' : ''; ?>">
         <a class="nav-link" href="laporan.php">
             <i class="far fa-fw fa-file"></i>
-            <span>Laporan</span></a>
+            <span>Report</span></a>
     </li>
 
     <!-- Divider -->

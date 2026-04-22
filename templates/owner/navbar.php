@@ -31,7 +31,7 @@
     <li class="nav-item <?= ($title == 'Laporan') ? 'active' : ''; ?>">
         <a class="nav-link" href="laporan.php">
             <i class="far fa-fw fa-file"></i>
-            <span>Laporan</span></a>
+            <span>Report</span></a>
     </li>
 
     <!-- Divider -->

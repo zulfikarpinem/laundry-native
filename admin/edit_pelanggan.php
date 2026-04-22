@@ -19,7 +19,7 @@ if (isset($_POST['update'])) {
 <div class="container-fluid">
     <?php
     if (isset($_SESSION['notUpdated'])) {
-        echo '<div class="alert alert-danger">Data gagal ditambahkan!</div>';
+        echo '<div class="alert alert-danger">Data failed to change!</div>';
         unset($_SESSION['notUpdated']);
     }
     ?>

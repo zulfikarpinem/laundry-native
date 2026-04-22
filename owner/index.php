@@ -32,7 +32,7 @@ $transaksi = query("SELECT * FROM tb_transaksi ORDER BY id DESC");
                     <div class="row no-gutters align-items-center">
                         <div class="col mr-2">
                             <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                Baru</div>
+                                New</div>
                             <div class="h5 mb-0 font-weight-bold text-gray-800"><?= $jumlahBaru; ?></div>
                         </div>
                         <div class="col-auto">
@@ -50,7 +50,7 @@ $transaksi = query("SELECT * FROM tb_transaksi ORDER BY id DESC");
                     <div class="row no-gutters align-items-center">
                         <div class="col mr-2">
                             <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
-                                Proses</div>
+                                Process</div>
                             <div class="h5 mb-0 font-weight-bold text-gray-800"><?= $jumlahProses; ?></div>
                         </div>
                         <div class="col-auto">
@@ -68,7 +68,7 @@ $transaksi = query("SELECT * FROM tb_transaksi ORDER BY id DESC");
                     <div class="row no-gutters align-items-center">
                         <div class="col mr-2">
                             <div class="text-xs font-weight-bold text-info text-uppercase mb-1">
-                                Selesai</div>
+                                Finished</div>
                             <div class="h5 mb-0 font-weight-bold text-gray-800"><?= $jumlahSelesai; ?></div>
                         </div>
                         <div class="col-auto">
@@ -86,7 +86,7 @@ $transaksi = query("SELECT * FROM tb_transaksi ORDER BY id DESC");
                     <div class="row no-gutters align-items-center">
                         <div class="col mr-2">
                             <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
-                                Diambil</div>
+                                Taken</div>
                             <div class="h5 mb-0 font-weight-bold text-gray-800"><?= $jumlahDiambil; ?></div>
                         </div>
                         <div class="col-auto">
@@ -101,7 +101,7 @@ $transaksi = query("SELECT * FROM tb_transaksi ORDER BY id DESC");
     <!-- DataTales Example -->
     <div class="card shadow mb-4">
         <div class="card-header py-3">
-            <h6 class="m-0 font-weight-bold text-primary">Riwayat Transaksi</h6>
+            <h6 class="m-0 font-weight-bold text-primary">Transaction History</h6>
         </div>
         <div class="card-body">
             <?php foreach ($transaksi as $t) : ?>
