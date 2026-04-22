@@ -26,7 +26,7 @@ if (isset($_POST['simpan'])) {
     <!-- Page Heading -->
     <div class="d-sm-flex align-items-center justify-content-between mb-4">
         <h1 class="h3 mb-0 text-gray-800">User</h1>
-        <a class="btn btn-secondary" href="pengguna.php"><i class="fas fa-arrow-left mr-2"></i>Kembali</a>
+        <a class="btn btn-secondary" href="pengguna.php"><i class="fas fa-arrow-left mr-2"></i>Back</a>
     </div>
 
     <!-- DataTales Example -->
@@ -54,7 +54,7 @@ if (isset($_POST['simpan'])) {
                     </div>
                     <div class="form-floating mb-3">
                         <select class="form-select" id="outlet" aria-label="Floating label select example" name="outlet" required>
-                            <option selected>Pilih outlet</option>
+                            <option selected>Select outlet</option>
                             <?php foreach ($outlet as $o) : ?>
                                 <option value="<?= $o['id']; ?>"><?= $o['nama']; ?></option>
                             <?php endforeach; ?>
@@ -70,7 +70,7 @@ if (isset($_POST['simpan'])) {
                         </select>
                         <label for="role">Role</label>
                     </div>
-                    <button type="submit" class="btn btn-primary float-right" name="simpan">Simpan</button>
+                    <button type="submit" class="btn btn-primary float-right" name="simpan">Save</button>
                 </form>
             </div>
         </div>

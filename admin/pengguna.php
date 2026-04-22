@@ -10,16 +10,16 @@ $pengguna = query("SELECT tb_user.*, tb_outlet.nama AS nama_outlet FROM tb_user,
 <div class="container-fluid">
     <?php
     if (isset($_SESSION['inserted'])) {
-        echo '<div class="alert alert-success">Data berhasil ditambahkan!</div>';
+        echo '<div class="alert alert-success">Data added successfully!</div>';
         unset($_SESSION['inserted']);
     } elseif (isset($_SESSION['updated'])) {
-        echo '<div class="alert alert-success">Data berhasil diubah!</div>';
+        echo '<div class="alert alert-success">Data changed successfully!</div>';
         unset($_SESSION['updated']);
     } elseif (isset($_SESSION['deleted'])) {
-        echo '<div class="alert alert-success">Data berhasil dihapus!</div>';
+        echo '<div class="alert alert-success">Data deleted successfully!</div>';
         unset($_SESSION['deleted']);
     } elseif (isset($_SESSION['notDeleted'])) {
-        echo '<div class="alert alert-danger">Data gagal dihapus!</div>';
+        echo '<div class="alert alert-danger">Data delation failed!</div>';
         unset($_SESSION['notDeleted']);
     }
     ?>
